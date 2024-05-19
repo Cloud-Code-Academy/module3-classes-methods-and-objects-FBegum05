@@ -337,19 +337,19 @@ List<String> result = new List<String>();
      */
     public static String createAndGetBookDetails() {
         // Create a Book object with title "A Brief History of Time" and author "Stephen Hawking"
-        Book__c newBook = new Book__c();
-        newBook.Title__c = 'A Brief History of Time';
-        newBook.Author__c = 'Stephen Hawking';
+        Book newbook  = new Book('A Brief History of Time' ,'Stephen Hawking');
+        newBook.Title = 'A Brief History of Time';
+        newBook.Author = 'Stephen Hawking';
         
         // Call the getBookDetails method on the book object to get the details of the book
-        insert newBook;
+        
         String bookDetails = getBookDetails(newBook);
         // Return the details of the book
         return bookDetails; // Replace null with the variable you used to store the result
     }
-    private static String getBookDetails(Book__c book) {
+    private static String getBookDetails(Book book) {
         // Format the book details into a string
-        return 'Title: ' + book.Title__c + ', Author: ' + book.Author__c;
+        return 'Title: ' + book.Title + ', Author: ' + book.Author;
     }
 
     /**
