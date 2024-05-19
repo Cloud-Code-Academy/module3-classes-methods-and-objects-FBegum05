@@ -6,7 +6,7 @@
  * Test methods related to the Book and Person classes are currently commented out and will need to be uncommented and deployed once the classes are set up.
  * Users of this class can expect to gain an understanding of the basics of unit testing in Apex and Salesforce, and be equipped to write their own tests for custom code.
  */
-
+//Testing
 @IsTest
 public with sharing class ClassesObjectsMethodsTest {
     @IsTest
